@@ -1,4 +1,3 @@
-/*  your css code here. If applicable */
 * {
     margin: 0;
     padding: 0;
@@ -10,48 +9,41 @@
     height: 100vh;
 }
 
-/* Navigation - 1/6 of viewport width */
 .navigation {
     width: calc(100vw / 6);
     background-color: #D7E8D4;
     padding: 1em;
 }
 
-/* Main content - remaining right side */
 .main-content {
     width: calc(100vw - (100vw / 6));
     display: flex;
     flex-direction: column;
 }
 
-/* Header - 1/5 of viewport height */
 .header {
     height: calc(100vh / 5);
     background-color: yellowgreen;
     padding: 1em;
 }
 
-/* Content section - 4/5 of viewport height */
-.content-section {
-    height: calc((100vh / 5) * 4);
+.content {
     display: flex;
+    flex: 4;
 }
 
-/* Article - 3/4 of content section */
-.article {
-    width: 75%;
+.content > article {
+    flex: 3;
     min-height: 60vh;
     padding: 1em;
 }
 
-/* Aside - 1/4 of content section */
-.aside {
-    width: 25%;
+.content > aside {
+    flex: 1;
     background-color: #f5f5dc;
     padding: 1em;
 }
 
-/* Footer - 1/5 of viewport height */
 .footer {
     height: calc(100vh / 5);
     background-color: yellowgreen;
